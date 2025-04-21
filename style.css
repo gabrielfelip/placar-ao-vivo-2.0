@@ -1,0 +1,166 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Centraliza o conteúdo em coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    min-height: 100vh;
+  }
+  
+  /* Título */
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Container de jogos */
+  #games {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os jogos */
+  }
+  
+  /* Estilo de cada jogo */
+  .game {
+    background-color: white;
+    padding: 15px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .game:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Estilo das equipes */
+  .team {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza os times */
+    margin-bottom: 10px;
+  }
+  
+  .team img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .team span {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  select {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    font-size: 16px;
+  }
+  
+  /* Estilo do placar */
+  .score {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .score .status {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  /* Cores para status dos jogos */
+  .status {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .status.live {
+    color: green;
+  }
+  
+  .status.finished {
+    color: red;
+  }
+  
+  .status.scheduled {
+    color: gray;
+  }
+  
+  .suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    background: #fff;
+    position: absolute;
+    z-index: 10;
+    width: 250px;
+  }
+  
+  .suggestions-list li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .suggestions-list li:hover {
+    background-color: #f0f0f0;
+  }
+
+  #tabs button {
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  #tabs button.active {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  #gamesContainer > div {
+    display: none;
+  }
+  
+  #gamesContainer > div.active {
+    display: block;
+  }
+  
+  .suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .suggestions-list li {
+    cursor: pointer;
+  }
+  
+  .favorite-btn {
+    margin-top: 10px;
+    background-color: gold;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  

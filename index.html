@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Placar Ao Vivo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Placar Ao Vivo</h1>
+
+  <div id="navigation">
+    <button id="liveBtn">Jogos ao Vivo</button>
+    <button id="favoritesBtn">Favoritos ⭐</button>
+  </div>
+
+  <div id="filters">
+    <label for="leagueFilter">Escolha a liga:</label>
+    <select id="leagueFilter">
+      <option value="">Todas as ligas</option>
+    </select>
+  </div>
+
+  <div id="games"></div>
+
+  <div id="favorites" style="display: none;">
+    <h2>Jogos Favoritados ⭐</h2>
+    <div id="favoriteGames"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
